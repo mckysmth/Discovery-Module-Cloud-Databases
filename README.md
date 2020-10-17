@@ -24,6 +24,10 @@ Users can clock in and clock out.<br />
 
 Users can sign in and sign out.<br />
 
+![alt text](print.png)
+
+Users can print report.<br />
+
 ![alt text](deleteaccount.png)
 
 Users can Delete account.<br />
