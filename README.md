@@ -24,7 +24,7 @@ Users can clock in and clock out.<br />
 
 Users can sign in and sign out.<br />
 
-![alt text](programdeleteaccount_running3.png)
+![alt text](deleteaccount.png)
 
 Users can Delete account.<br />
 
