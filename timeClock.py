@@ -63,3 +63,12 @@ class TimeClock:
             print ("\nAccount successfully deleted.\n")
             print ("\nSigning Out.\n")
             self.emp = None
+
+    def printOut(self):
+        docs = GoogleFireBase.get_all_PIO(self.db, self.emp)
+
+        print("CLOCK IN\t\t\t\t CLOCK OUT\t\t\t\t")
+        for doc in docs:
+            pio_dict = doc.to_dict()
+            poi = PunchIn(pio_dict["clockedInAt"], pio_dict["clockedOutAt"])
+            poi.printLine()

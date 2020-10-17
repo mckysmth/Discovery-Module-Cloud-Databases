@@ -14,7 +14,7 @@ def SignIn(tc):
 
 def ClockInOut(tc):
     while tc.emp != None:
-        userInput = input("\n1. Clock In \n2. Clock out\n3. Delet account\n4. Sign Out\n" + tc.emp.name + " > " )
+        userInput = input("\n1. Clock In \n2. Clock out\n3. Delete account\n4. Print Report\n5. Sign Out\n" + tc.emp.name + " > " )
         if userInput == "1":
             tc.clockIn()
         elif userInput == "2":
@@ -22,6 +22,8 @@ def ClockInOut(tc):
         elif userInput == "3":
             tc.deletAccount()
         elif userInput == "4":
+            tc.printOut()
+        elif userInput == "5":
             tc.signOut()
             
         

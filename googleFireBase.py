@@ -66,3 +66,8 @@ class GoogleFireBase:
         else:
             return None
 
+    @staticmethod
+    def get_all_PIO(db, emp):
+
+        return db.collection("employee").document(emp.name).collection("punchInOut").stream()
+
